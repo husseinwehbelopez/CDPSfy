@@ -25,5 +25,9 @@ exports.tracks = {
 	4: {
 		name: 'Littleidea',
 		url: '/media/Littleidea.mp3'
+	},
+	4: {
+		name: 'People',
+		url: '/media/People.ogg'
 	}
 };
