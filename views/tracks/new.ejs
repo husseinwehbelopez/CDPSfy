@@ -1,6 +1,36 @@
-<form action="/tracks" method="post" enctype="multipart/form-data">  
-  <label class="upload_field">Upload a new track:</label>
-  <input class="upload_field" type="file" name="track"/>
-  <button class="hint upload_field" type="submit">Upload</button>
+<!--
+<form class="col-sm-4 col-sm-offset-4" action="/tracks" method="post" enctype="multipart/form-data">  
+  <label class="form upload_field">Upload a new track:</label>
+  <input class="form upload_field" type="file" name="track"/>
+  <input class="form upload_field" type="file" name="cover"/>
+  <button class="form hint upload_field" type="submit" style="width: 24%;">Upload</button>
   <span class="hint upload_field">Supported files: MP3, Wav, and Ogg</span>
 </form>
+-->
+<div class="container">
+    <form action="/tracks" method="post" enctype="multipart/form-data">
+    <label class="form upload_field">Upload a new track:</label>
+        <div class="input-group col-sm-4 col-sm-offset-4" style="margin-bottom: 15px;">
+            <span class="input-group-btn">
+                <span class="btn btn-primary btn-file" style="margin-right: 3px; width: 100%;">
+                    Browse track&hellip; <input type="file" name="track">
+                </span>
+            </span>
+            <input type="text" class="form-control" readonly>
+        </div>
+        <div class="input-group col-sm-4 col-sm-offset-4" style="margin-bottom: 15px;">
+            <span class="input-group-btn">
+                <span class="btn btn-primary btn-file">
+                    Browse cover&hellip; <input type="file" name="image">
+                </span>
+            </span>
+            <input type="text" class="form-control" readonly>
+        </div>
+        <div class="col-sm-4 col-sm-offset-4"">
+            <button type="submit" class="file-input btn btn-primary btn-file" style="width: 33%; float: left; margin-right: 10px;">Upload</button>
+            <span class="help-block" style="margin-top: 8px;">
+                Supported track files: MP3, Wav, Ogg
+            </span>
+        </div>
+    </form>
+</div>
