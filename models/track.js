@@ -5,6 +5,8 @@ Modelo de datos de canciones (track)
 track_id: {
 	name: nombre de la canción,
 	url: url del fichero de audio
+	namecover: nombre de la carátula
+	urlcover: url de la carátula
 } 
 
 */
