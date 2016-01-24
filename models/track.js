@@ -9,6 +9,17 @@ track_id: {
 
 */
 
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
+  
+var trackSchema = new Schema({
+	
+	name: {type: String },
+	url: {type: String},
+});
+
+module.exports = mongoose.model('Track', trackSchema);
+
 exports.tracks = {
 	1: {
 		name: 'Cute',
