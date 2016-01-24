@@ -6,10 +6,21 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var partials = require('express-partials');
 var methodOverride = require('method-override');
-
+var http = require("htpp");
+var mongoose = require('mongoose');
 var routes = require('./routes/index');
 
 var app = express();
+
+//moongose connect:
+moongose.connect('mongodb://localhost/tracks', function(err,res){
+  if (err){
+    console.log('ERROR: connecting to Database. ' + err);
+  }
+  app.listen(8080, function(){
+    console.log("Node server running  ");
+  });
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
