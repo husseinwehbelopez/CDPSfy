@@ -7,10 +7,10 @@ var bodyParser = require('body-parser');
 var partials = require('express-partials');
 var mongoose = require('mongoose');
 var methodOverride = require('method-override');
-<<<<<<< HEAD
+
 
 // database connect
-mongoose.connect('mongodb://localhost:8080/track', function(err, res) {
+mongoose.connect('mongodb://localhost/tracks', function(err, res) {
   if (err) {
     console.log('ERROR: connecting to Database. ' + err);
   } else {
