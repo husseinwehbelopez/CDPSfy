@@ -11,19 +11,7 @@ track_id: {
 
 */
 
-<<<<<<< HEAD
-var mongoose = require('mongoose'),  
-    Schema   = mongoose.Schema;
 
-var trackSchema = new Schema({  
-	name:    { type: String },
-	url:     { type: String },
-	imgname: { type: String },
-	urlImg:  { type: String }
-});
-
-module.exports = mongoose.model('Track', trackSchema);  
-=======
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
   
@@ -57,4 +45,4 @@ exports.tracks = {
 		url: '/media/People.ogg'
 	}
 };
->>>>>>> fde0f08a45596d302864070bdd5859bb177a5e2c
+
