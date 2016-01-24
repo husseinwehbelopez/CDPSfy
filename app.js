@@ -13,7 +13,7 @@ var routes = require('./routes/index');
 var app = express();
 
 //moongose connect:
-moongose.connect('mongodb://localhost/tracks', function(err,res){
+moongose.connect('mongodb://localhost/track', function(err,res){
   if (err){
     console.log('ERROR: connecting to Database. ' + err);
   }
