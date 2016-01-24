@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var partials = require('express-partials');
 var mongoose = require('mongoose');
 var methodOverride = require('method-override');
-
+var http = require('http');
 
 // database connect
 mongoose.connect('mongodb://localhost/tracks', function(err, res) {
@@ -20,23 +20,12 @@ mongoose.connect('mongodb://localhost/tracks', function(err, res) {
 
 require('./models/track');
 
-=======
-var http = require("htpp");
-var mongoose = require('mongoose');
->>>>>>> fde0f08a45596d302864070bdd5859bb177a5e2c
+
 var routes = require('./routes/index');
 
 var app = express();
 
-//moongose connect:
-moongose.connect('mongodb://localhost/track', function(err,res){
-  if (err){
-    console.log('ERROR: connecting to Database. ' + err);
-  }
-  app.listen(8080, function(){
-    console.log("Node server running  ");
-  });
-});
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
